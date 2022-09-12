@@ -285,4 +285,77 @@ main .header__menu_item button {
   .hero__button {
     margin: 0 auto 0 0;
   }
+}
+.sections__wrapper {
+  width: 100%;
+}
+
+.intro {
+  max-width: 36.75rem;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  margin-top: 5rem;
+}
+.intro__line {
+  height: 1px;
+  width: 10rem;
+  margin: 0 auto;
+  background-color: hsl(273deg, 4%, 51%);
+}
+.intro__heading {
+  color: hsl(270deg, 9%, 17%);
+  font-family: "DM Serif Display", Arial;
+  font-size: 2.6rem;
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+.intro__columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+  place-items: center;
+}
+.intro__column {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.intro__column_heading {
+  margin: 1rem;
+  color: hsl(270deg, 9%, 17%);
+  font-size: 1.5rem;
+  font-family: "DM Serif Display", Arial;
+}
+.intro__column_paragraph {
+  color: hsl(273deg, 4%, 51%);
+  line-height: 1.5;
+  font-family: "Karla", sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+  .intro {
+    max-width: 68.75rem;
+  }
+  .intro__line {
+    margin: 0 auto 0 0;
+  }
+  .intro__heading {
+    text-align: start;
+    font-size: 3.5rem;
+  }
+  .intro__columns {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .intro__column {
+    text-align: start;
+    align-items: flex-start;
+  }
+  .intro__column_heading {
+    margin: 1.5rem 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
