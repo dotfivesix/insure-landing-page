@@ -16,7 +16,7 @@
     &__pattern
     {
         position: absolute;
-        content: url("../images/bg-pattern-footer-mobile.svg");
+        content: url("./images/bg-pattern-footer-mobile.svg");
         top: 0;
         left: 0;
         filter: brightness(0.75);
@@ -118,7 +118,7 @@
 
         &__pattern
         {
-            content: url("../images/bg-pattern-footer-desktop.svg");
+            content: url("./images/bg-pattern-footer-desktop.svg");
             opacity: 0.5;
         }
 

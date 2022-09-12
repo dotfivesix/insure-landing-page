@@ -18,7 +18,7 @@
 
         &::before
         {
-            content: url("../images/bg-pattern-how-we-work-mobile.svg");
+            content: url("./images/bg-pattern-how-we-work-mobile.svg");
             position: absolute;
             top: 0;
             right: 0;
@@ -71,7 +71,7 @@
 
             &::before
             {
-                content: url("../images/bg-pattern-how-we-work-desktop.svg");
+                content: url("./images/bg-pattern-how-we-work-desktop.svg");
             }
         }
         
