@@ -1,0 +1,13 @@
+@mixin center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin resetBtn
+{
+    outline: none;
+    border: none;
+    background: transparent;
+}

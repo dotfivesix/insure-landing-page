@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Insure | Humanizing your insurance</title>
 </head>
 <body>
@@ -27,9 +27,15 @@
             <li class="header__nav_item"><button>View plans</button></li>
           </ul>
         </nav>
-        <div class="header__toggler_container">
+        <div class="header__toggler_container" onclick="ToggleMenu()">
           <img src="./images/icon-hamburger.svg" alt="=" class="header__toggler">
         </div>
+        <ul class="header__menu">
+          <li class="header__menu_item"><a href="#">How we work</a></li>
+          <li class="header__menu_item"><a href="#">Blog</a></li>
+          <li class="header__menu_item"><a href="#">Account</a></li>
+          <li class="header__menu_item"><button>View plans</button></li>
+        </ul>
       </header>
     </div>
     
@@ -150,6 +156,8 @@
 
     </footer>
   </div>
+
+  <script src="./scripts/main.js"></script>
 
 </body>
 </html>
