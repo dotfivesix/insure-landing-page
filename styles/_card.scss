@@ -1,0 +1,86 @@
+.card
+{
+    max-width: $mobileWidth;
+    margin: 0 auto;
+    text-align: center;
+    
+
+    &__container
+    {
+        margin: 2rem;
+        padding: 4rem;
+        background-color: $darkViolet;
+        position: relative;
+        overflow: hidden;
+        @include center;
+        flex-direction: column;
+        gap: 2rem;
+
+        &::before
+        {
+            content: url("../images/bg-pattern-how-we-work-mobile.svg");
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__heading
+    {
+        font-size: 2.5rem;
+        font-family: $headingFont;
+        color: $veryLightGray;
+        position:relative;
+        z-index: 2;
+    }
+
+    &__button
+    {
+        position:relative;
+        z-index: 2;
+        outline: none;
+        border: 1px solid $veryLightGray;
+        background: transparent;
+        padding: .5rem 1rem;
+        font-size: 1.2rem;
+        font-family: $bodyFont;
+        text-transform: uppercase;
+        color: $veryLightGray;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        &:hover
+        {
+            background-color: $veryLightGray;
+            color: $veryDarkViolet;
+        }
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    .card
+    {
+        max-width: $desktopWidth;
+
+        &__container
+        {
+            flex-direction: row;
+            text-align: start;
+            padding: 4rem;
+
+            &::before
+            {
+                content: url("../images/bg-pattern-how-we-work-desktop.svg");
+            }
+        }
+        
+        &__heading
+        {
+            width: 60%;
+            font-size: 3rem;
+            margin-right: auto;
+        }
+
+    }
+}
