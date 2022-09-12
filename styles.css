@@ -22,7 +22,7 @@ main .header {
   height: 6rem;
   width: 100%;
   padding: 0 2rem;
-  max-width: 33.75rem;
+  max-width: 36.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,7 +83,7 @@ main .header__menu_item button {
   padding: 0.5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   main .header {
     max-width: 68.75rem;
   }
@@ -147,5 +147,142 @@ main .header__menu_item button {
   main .header__nav ul li button:hover {
     background: hsl(270deg, 9%, 17%);
     color: hsl(0deg, 0%, 98%);
+  }
+}
+.hero__image_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__image {
+  content: url("../images/image-intro-desktop.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 30rem;
+}
+.hero__content {
+  width: 100%;
+  background-color: hsl(256deg, 26%, 20%);
+  padding: 7.5rem 2rem;
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+.hero__content::after {
+  content: url("../images/bg-pattern-intro-left-mobile.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero__content::before {
+  content: url("../images/bg-pattern-intro-right-mobile.svg");
+  position: absolute;
+  bottom: -40%;
+  right: 0;
+}
+.hero__heading {
+  font-family: "DM Serif Display", Arial;
+  color: hsl(0deg, 0%, 98%);
+  font-size: 2.8rem;
+}
+.hero__paragraph {
+  font-family: "Karla", sans-serif;
+  color: hsl(0deg, 0%, 98%);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.hero__button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  outline: none;
+  border: 1px solid hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 98%);
+  background: transparent;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.hero__button:hover {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(273deg, 4%, 51%);
+}
+.hero__heading, .hero__paragraph {
+  max-width: 36.75rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+  .hero__wrapper {
+    background-color: hsl(256deg, 26%, 20%);
+    width: 100%;
+    position: relative;
+  }
+  .hero__wrapper::before {
+    content: url("../images/bg-pattern-mobile-nav.svg");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+  }
+  .hero__wrapper::after {
+    content: url("../images/bg-pattern-intro-left-desktop.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
+    max-width: 68.75rem;
+    margin: 0 auto;
+    gap: 0;
+    max-height: 28.5rem;
+  }
+  .hero__image_container {
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+  }
+  .hero__image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: auto;
+  }
+  .hero__content {
+    flex: 1;
+    background-color: transparent;
+    text-align: left;
+    padding: 2rem 0;
+    max-height: 22.5rem;
+    margin: auto 0;
+  }
+  .hero__content::after, .hero__content::before {
+    display: none;
+  }
+  .hero__content::after {
+    content: "";
+    display: flex;
+    height: 2px;
+    width: 10rem;
+    background-color: hsl(0deg, 0%, 98%);
+  }
+  .hero__heading {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+  .hero__button {
+    margin: 0 auto 0 0;
   }
 }/*# sourceMappingURL=styles.css.map */
